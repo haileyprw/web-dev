@@ -47,4 +47,16 @@ QUnit.module('main.js tests', function() {
         assert.equal(result, expected, 'add(2, -3) should return -1');
     });
 
+    QUnit.test('add should return the sum of two double digit numbers', function(assert) {
+        //Arrange
+        const num1 = 20;
+        const num2 = 30;
+        const expected = 50;
+        //Act
+        const result = add(num1, num2);
+        //Assert
+        assert.equal(result, expected, 'add(20, 30) should return 50');
+    });
+
+
 });
